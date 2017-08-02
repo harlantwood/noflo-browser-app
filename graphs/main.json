@@ -56,7 +56,7 @@
             "component": "interaction/ListenMouse",
             "metadata": {
                 "label": "interaction/ListenMouse",
-                "x": 180,
+                "x": -108,
                 "y": 72,
                 "width": 72,
                 "height": 72
@@ -68,6 +68,16 @@
                 "label": "core/Kick",
                 "x": 288,
                 "y": 72,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "browser-app/DoSomething_f0rqu": {
+            "component": "browser-app/DoSomething",
+            "metadata": {
+                "label": "DoSomething",
+                "x": 252,
+                "y": -72,
                 "width": 72,
                 "height": 72
             }
@@ -141,6 +151,19 @@
             "tgt": {
                 "process": "dom/WriteHtml_fpz6j",
                 "port": "html"
+            }
+        },
+        {
+            "src": {
+                "process": "dom/GetElement_xvz54",
+                "port": "element"
+            },
+            "tgt": {
+                "process": "browser-app/DoSomething_f0rqu",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 0
             }
         },
         {
